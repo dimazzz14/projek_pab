@@ -26,7 +26,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                tools:text="Username"/>
+                tools:text="Pelanggan"/>
 
             <TextView
                 android:id="@+id/tv_content"
@@ -35,7 +35,7 @@
                 android:textSize="15sp"
                 android:layout_below="@+id/tv_username"
                 android:layout_marginTop="2dp"
-                tools:text="Content" />
+                tools:text="Jenis Servis" />
 
             <TextView
                 android:id="@+id/tv_created_date"
