@@ -62,13 +62,13 @@ public class AddUnggahActivity extends AppCompatActivity {
 
                 if (bolehUnggah) {
                     String userId = Utilities.getValue(AddUnggahActivity.this, "xUserId");
-                    addUnggah(nama,alamat,telepon,motor,jenis,servis,userId);
+                    addUnggah(userId, nama,alamat,telepon,motor,jenis,servis);
                 }
             }
         });
     }
 
-    private void addUnggah(String nama, String alamat, String telepon, String motor, String jenis, String servis, String userId) {
+    private void addUnggah( String userId, String nama, String alamat, String telepon, String motor, String jenis, String servis) {
         binding.progressBar.setVisibility(View.VISIBLE);
         APIService api = Utilities.getRetrofit().create(APIService.class);
         Call<ValueNoData> call = api.addUnggah(nama,alamat,telepon,motor,jenis,servis,userId);
