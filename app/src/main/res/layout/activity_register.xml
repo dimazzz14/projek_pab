@@ -35,7 +35,6 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_password"
             android:layout_width="match_parent"
@@ -47,24 +46,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
-                android:inputType="textPassword"
-                />
+                android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_confirmpassword"
+            android:id="@+id/til_konfirmasi_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp">
 
             <EditText
-                android:id="@+id/et_confirmpassword"
+                android:id="@+id/et_konfirmasi_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Konfirmasi Password"
-                android:inputType="textPassword"
-                />
+                android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -73,25 +70,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Register"/>
+            android:text="Register"
+            android:textAllCaps="true"/>
 
         <Button
             android:id="@+id/btn_login"
+            style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sudah pernah daftar? Silahkan langsung login!"
+            android:text="Sudah pernah daftar? Silakan langsung login!"
             android:textAllCaps="false"
-            style="@style/Widget.Material3.Button.TextButton"
             android:textSize="14sp"/>
-
 
     </LinearLayout>
 
     <ProgressBar
-        android:id="@+id/progres_bar"
+        android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ll_register"
-        android:layout_centerHorizontal="true"/>
+        android:layout_below="@+id/ll_register"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
 
 </RelativeLayout>

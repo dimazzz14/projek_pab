@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -9,12 +11,41 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProjekPAB"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateUnggahActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ProjekPAB.ActionBar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".AddUnggahActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjekPAB.ActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjekPAB" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjekPAB" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjekPAB.ActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ProjekPAB">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

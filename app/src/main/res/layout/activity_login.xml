@@ -17,9 +17,9 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"
-            android:foregroundGravity="center"/>
+            android:layout_marginBottom="30dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_username"
@@ -31,7 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
-                android:inputType="text"/>
+                android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -54,26 +54,28 @@
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="Login"
-            android:textAllCaps="true"/>
+            android:textAllCaps="true"
+            android:layout_marginTop="16dp"/>
 
         <Button
             android:id="@+id/btn_register"
+            style="@style/Widget.Material3.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Belum punya akun? Silahkan register dahulu"
+            android:text="Belum punya Akun? Silakan register dulu!"
             android:textAllCaps="false"
-            android:textSize="14sp"
-            style="@style/Widget.Material3.Button.TextButton"/>
+            android:textSize="14sp"/>
 
     </LinearLayout>
 
     <ProgressBar
-        android:id="@+id/progres_bar"
+        android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ll_login"
-        android:layout_centerHorizontal="true"/>
+        android:layout_below="@+id/ll_login"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
 </RelativeLayout>
