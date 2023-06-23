@@ -29,19 +29,64 @@
                 tools:text="Username"/>
 
             <TextView
-                android:id="@+id/tv_content"
+                android:id="@+id/tv_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_below="@+id/tv_username"
                 android:layout_marginTop="2dp"
-                tools:text="Content" />
+                tools:text="Nama" />
+
+            <TextView
+                android:id="@+id/tv_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_nama"
+                android:layout_marginTop="2dp"
+                tools:text="Alamat" />
+
+            <TextView
+                android:id="@+id/tv_telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_alamat"
+                android:layout_marginTop="2dp"
+                tools:text="Nomor Telepon" />
+
+            <TextView
+                android:id="@+id/tv_motor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_telepon"
+                android:layout_marginTop="2dp"
+                tools:text="Nama Motor" />
+
+            <TextView
+                android:id="@+id/tv_jenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_motor"
+                android:layout_marginTop="2dp"
+                tools:text="Jenis Motor" />
+
+            <TextView
+                android:id="@+id/tv_servis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_below="@+id/tv_jenis"
+                android:layout_marginTop="2dp"
+                tools:text="Servis yang diinginkan" />
 
             <TextView
                 android:id="@+id/tv_created_date"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_content"
+                android:layout_below="@+id/tv_servis"
                 android:layout_marginTop="2dp"
                 android:textAlignment="textEnd"
                 tools:text="01-01-2023 20:20:00"/>

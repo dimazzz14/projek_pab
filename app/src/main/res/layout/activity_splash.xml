@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8463BF"
+    android:background="#0206F6"
     tools:context=".SplashActivity">
 
     <ImageView
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Post"
+        android:text="SelfVices"
         android:textSize="28sp"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -39,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed"
-        android:text="Write your favourite text here"
+        android:text="Servis motor cara mudah!"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:textStyle="bold|italic"

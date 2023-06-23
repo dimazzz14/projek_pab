@@ -15,20 +15,99 @@
         android:layout_marginBottom="16dp">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_content"
+            android:id="@+id/til_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
             app:counterMaxLength="180">
 
             <EditText
-                android:id="@+id/et_content"
+                android:id="@+id/et_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Content"
+                android:hint="Nama"
                 android:inputType="none"
-                android:maxLength="180" />
+                android:maxLength="180"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="180">
+
+            <EditText
+                android:id="@+id/et_alamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:inputType="none"
+                android:maxLength="180"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="180">
+
+            <EditText
+                android:id="@+id/et_telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Telepon"
+                android:inputType="none"
+                android:maxLength="180"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_motor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="180">
+
+            <EditText
+                android:id="@+id/et_motor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Motor"
+                android:inputType="none"
+                android:maxLength="180"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_jenis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="180">
+
+            <EditText
+                android:id="@+id/et_jenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Jenis"
+                android:inputType="none"
+                android:maxLength="180"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_servis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="180">
+
+            <EditText
+                android:id="@+id/et_servis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Servis yang diinginkan"
+                android:inputType="none"
+                android:maxLength="180"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

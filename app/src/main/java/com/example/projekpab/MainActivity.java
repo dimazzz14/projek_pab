@@ -64,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
                             String id = unggah.getId();
                             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                             builder.setTitle("Konfirmasi");
-                            builder.setMessage("Yakin ingin menghapus unggah '" + data.get(position).getContent() + "' ?");
-                            builder.setPositiveButton("Ywdah", new DialogInterface.OnClickListener() {
+                            builder.setMessage("Yakin ingin menghapus '" + data.get(position).getNama() + data.get(position).getAlamat() + data.get(position).getTelepon() + data.get(position).getMotor() + data.get(position).getJenis() + data.get(position).getServis() + "' ?");
+                            builder.setPositiveButton("Ya, hapus", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     deleteUnggah(id);
                                 }
                             });
-                            builder.setNegativeButton("G boleh", new DialogInterface.OnClickListener() {
+                            builder.setNegativeButton("Tidak, kembali", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.cancel();

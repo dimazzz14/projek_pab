@@ -22,20 +22,30 @@ public interface APIService {
     Call<ValueData<User>> register(@Field("username") String username,
                                    @Field("password") String password);
 
-    @GET("post")
+    @GET("selfvices")
     Call<ValueData<List<Unggah>>> getUnggah();
 
     @FormUrlEncoded
-    @POST("post")
-    Call<ValueNoData> addUnggah(@Field("content") String content,
+    @POST("selfvices")
+    Call<ValueNoData> addUnggah(@Field("nama") String nama,
+                                @Field("alamat") String alamat,
+                                @Field("telepon") String telepon,
+                                @Field("motor") String motor,
+                                @Field("jenis") String jenis,
+                                @Field("servis") String servis,
                                 @Field("user_id") String user_id);
 
     @FormUrlEncoded
-    @PUT("post")
+    @PUT("selfvices")
     Call<ValueNoData> updateUnggah(@Field("id") String id,
-                                   @Field("content") String content);
+                                   @Field("nama") String nama,
+                                   @Field("alamat") String alamat,
+                                   @Field("telepon") String telepon,
+                                   @Field("motor") String motor,
+                                   @Field("jenis") String jenis,
+                                   @Field("servis") String servis);
 
-    @DELETE("post/{id}")
+    @DELETE("selfvices/{id}")
     Call<ValueNoData> deleteUnggah(@Path("id") String id);
 
 }

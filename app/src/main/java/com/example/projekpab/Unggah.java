@@ -5,7 +5,12 @@ import android.os.Parcelable;
 
 public class Unggah implements Parcelable {
     private String id;
-    private String content;
+    private String nama;
+    private String alamat;
+    private String telepon;
+    private String motor;
+    private String jenis;
+    private String servis;
     private String user_id;
     private String created_date;
     private String modified_date;
@@ -13,7 +18,12 @@ public class Unggah implements Parcelable {
 
     protected Unggah(Parcel in) {
         id = in.readString();
-        content = in.readString();
+        nama = in.readString();
+        alamat = in.readString();
+        telepon = in.readString();
+        motor = in.readString();
+        jenis = in.readString();
+        servis = in.readString();
         user_id = in.readString();
         created_date = in.readString();
         modified_date = in.readString();
@@ -23,7 +33,12 @@ public class Unggah implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(id);
-        dest.writeString(content);
+        dest.writeString(nama);
+        dest.writeString(alamat);
+        dest.writeString(telepon);
+        dest.writeString(motor);
+        dest.writeString(jenis);
+        dest.writeString(servis);
         dest.writeString(user_id);
         dest.writeString(created_date);
         dest.writeString(modified_date);
@@ -54,12 +69,52 @@ public class Unggah implements Parcelable {
         this.id = id;
     }
 
-    public String getContent() {
-        return content;
+    public String getNama() {
+        return nama;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getTelepon() {
+        return telepon;
+    }
+
+    public void setTelepon(String telepon) {
+        this.telepon = telepon;
+    }
+
+    public String getMotor() {
+        return motor;
+    }
+
+    public void setMotor(String motor) {
+        this.motor = motor;
+    }
+
+    public String getJenis() {
+        return jenis;
+    }
+
+    public void setJenis(String jenis) {
+        this.jenis = jenis;
+    }
+
+    public String getServis() {
+        return servis;
+    }
+
+    public void setServis(String servis) {
+        this.servis = servis;
     }
 
     public String getUser_id() {

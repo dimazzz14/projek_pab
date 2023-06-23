@@ -26,27 +26,52 @@ public class AddUnggahActivity extends AppCompatActivity {
         binding.btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String content = binding.etContent.getText().toString();
+                String nama = binding.etNama.getText().toString();
+                String alamat = binding.etAlamat.getText().toString();
+                String telepon = binding.etTelepon.getText().toString();
+                String motor = binding.etMotor.getText().toString();
+                String jenis = binding.etJenis.getText().toString();
+                String servis = binding.etServis.getText().toString();
 
                 boolean bolehUnggah = true;
 
-                if (TextUtils.isEmpty(content)) {
+                if (TextUtils.isEmpty(nama)) {
                     bolehUnggah = false;
-                    binding.etContent.setError("Konten tidak boleh kosong!");
+                    binding.etNama.setError("Nama tidak boleh kosong!");
+                }
+                if (TextUtils.isEmpty(alamat)) {
+                    bolehUnggah = false;
+                    binding.etAlamat.setError("Alamat tidak boleh kosong!");
+                }
+                if (TextUtils.isEmpty(telepon)) {
+                    bolehUnggah = false;
+                    binding.etTelepon.setError("Nomor telepon tidak boleh kosong!");
+                }
+                if (TextUtils.isEmpty(motor)) {
+                    bolehUnggah = false;
+                    binding.etMotor.setError("Nama motor tidak boleh kosong!");
+                }
+                if (TextUtils.isEmpty(jenis)) {
+                    bolehUnggah = false;
+                    binding.etJenis.setError("Jenis motor tidak boleh kosong!");
+                }
+                if (TextUtils.isEmpty(servis)) {
+                    bolehUnggah = false;
+                    binding.etServis.setError("Servis yang diinginkan tidak boleh kosong!");
                 }
 
                 if (bolehUnggah) {
                     String userId = Utilities.getValue(AddUnggahActivity.this, "xUserId");
-                    addUnggah(content, userId);
+                    addUnggah(nama,alamat,telepon,motor,jenis,servis,userId);
                 }
             }
         });
     }
 
-    private void addUnggah(String content, String userId) {
+    private void addUnggah(String nama, String alamat, String telepon, String motor, String jenis, String servis, String userId) {
         binding.progressBar.setVisibility(View.VISIBLE);
         APIService api = Utilities.getRetrofit().create(APIService.class);
-        Call<ValueNoData> call = api.addUnggah(content, userId);
+        Call<ValueNoData> call = api.addUnggah(nama,alamat,telepon,motor,jenis,servis,userId);
         call.enqueue(new Callback<ValueNoData>() {
             @Override
             public void onResponse(Call<ValueNoData> call, Response<ValueNoData> response) {
