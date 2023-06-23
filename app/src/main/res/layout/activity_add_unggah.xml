@@ -32,7 +32,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
-            app:counterMaxLength="180">
+            app:counterMaxLength="180"
+            android:layout_below="@id/til_nama">
 
             <EditText
                 android:id="@+id/et_alamat"
@@ -48,7 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
-            app:counterMaxLength="180">
+            app:counterMaxLength="180"
+            android:layout_below="@id/til_alamat">
 
             <EditText
                 android:id="@+id/et_telepon"
@@ -64,7 +66,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
-            app:counterMaxLength="180">
+            app:counterMaxLength="180"
+            android:layout_below="@id/til_telepon">
 
             <EditText
                 android:id="@+id/et_motor"
@@ -80,7 +83,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
-            app:counterMaxLength="180">
+            app:counterMaxLength="180"
+            android:layout_below="@id/til_motor">
 
             <EditText
                 android:id="@+id/et_jenis"
@@ -96,7 +100,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
-            app:counterMaxLength="180">
+            app:counterMaxLength="180"
+            android:layout_below="@id/til_jenis">
 
             <EditText
                 android:id="@+id/et_servis"
